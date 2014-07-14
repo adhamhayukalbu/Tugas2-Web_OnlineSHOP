@@ -1,0 +1,1676 @@
+2014/07/08 05:56:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/orderyuk/index.php?r=gii
+---
+2014/07/08 05:58:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/orderyuk/index.php?r=user
+---
+2014/07/08 06:00:07 [error] [php] include(WebUser.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\YiiBase.php(196): import()
+#1 C:\xampp\htdocs\Yii\framework\base\CModule.php(386): createComponent()
+#2 C:\xampp\htdocs\Yii\framework\base\CModule.php(103): CWebApplication->getComponent()
+#3 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(3): CWebApplication->__get()
+#4 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#9 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#12 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): SiteController->endContent()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#15 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#16 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#17 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#20 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#22 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/index.php
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php (3)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php (5)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php (10)
+2014/07/08 06:01:02 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(10): spl_autoload_call()
+#1 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(17): WebUser->loadUser()
+#2 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(3): WebUser->isAdmin()
+#3 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once()
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): SiteController->endContent()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#16 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/index.php
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (10)
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (17)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php (3)
+2014/07/08 06:01:04 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(10): spl_autoload_call()
+#1 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(17): WebUser->loadUser()
+#2 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(3): WebUser->isAdmin()
+#3 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once()
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): SiteController->endContent()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(98): SiteController->render()
+#16 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/index.php?r=site/login
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (10)
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (17)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php (3)
+2014/07/08 06:01:05 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(10): spl_autoload_call()
+#1 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(17): WebUser->loadUser()
+#2 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(3): WebUser->isAdmin()
+#3 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once()
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): SiteController->endContent()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#16 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/index.php
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (10)
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (17)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php (3)
+2014/07/08 06:01:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/orderyuk/index.php?r=user
+---
+2014/07/08 06:01:11 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(10): spl_autoload_call()
+#1 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(17): WebUser->loadUser()
+#2 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(3): WebUser->isAdmin()
+#3 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once()
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): SiteController->endContent()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#16 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/index.php?
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (10)
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (17)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php (3)
+2014/07/08 06:01:16 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(10): spl_autoload_call()
+#1 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(17): WebUser->loadUser()
+#2 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(3): WebUser->isAdmin()
+#3 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once()
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): SiteController->endContent()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#16 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (10)
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (17)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php (3)
+2014/07/08 06:01:23 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(10): spl_autoload_call()
+#1 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(17): WebUser->loadUser()
+#2 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(3): WebUser->isAdmin()
+#3 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once()
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): SiteController->endContent()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#16 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/index.php?
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (10)
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (17)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php (3)
+2014/07/08 06:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in C:\xampp\htdocs\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/orderyuk/index.php?r=user
+---
+2014/07/08 06:01:30 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\Yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(10): spl_autoload_call()
+#1 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(17): WebUser->loadUser()
+#2 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(3): WebUser->isAdmin()
+#3 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once()
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): SiteController->endContent()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#16 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (10)
+in C:\xampp\htdocs\orderyuk\protected\components\WebUser.php (17)
+in C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php (3)
+2014/07/08 06:04:10 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isGuest".' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(7): CComponent->__call('isGuest', Array)
+#1 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\tpl_navigation.php(7): WebUser->isGuest()
+#2 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\main.php(5): require_once('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<section class=...')
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<section class=...')
+#8 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#10 C:\xampp\htdocs\orderyuk\themes\sojoyenjoy\views\layouts\column1.php(10): CBaseController->endContent()
+#11 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): CController->render('index')
+#15 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#21 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/orderyuk/
+---
+2014/07/08 06:39:42 [error] [php] require_once(tpl_navigation.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\orderyuk\themes\orderyuk\views\layouts\main.php:5)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 C:\xampp\htdocs\orderyuk\themes\orderyuk\views\layouts\column1.php(10): SiteController->endContent()
+#7 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/
+in C:\xampp\htdocs\orderyuk\themes\orderyuk\views\layouts\main.php (5)
+in C:\xampp\htdocs\orderyuk\themes\orderyuk\views\layouts\main.php (5)
+in C:\xampp\htdocs\orderyuk\themes\orderyuk\views\layouts\column1.php (10)
+2014/07/11 04:55:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/index
+---
+2014/07/11 06:51:22 [error] [exception.CDbException] exception 'CDbException' with message 'Table "user" does not have a column named "username".' in C:\xampp\htdocs\Yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(14): CActiveRecord->findByAttributes(Array)
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 06:52:02 [error] [exception.CDbException] exception 'CDbException' with message 'Table "user" does not have a column named "username".' in C:\xampp\htdocs\Yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(14): CActiveRecord->findByAttributes(Array)
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 06:53:00 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 06:54:16 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.Username" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(14): CComponent->__get('Username')
+#1 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 06:54:37 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.Password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CComponent->__get('Password')
+#1 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 06:54:51 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 06:54:58 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 06:55:30 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 10:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/index
+---
+2014/07/11 17:33:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 17:33:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/11 17:56:31 [error] [php] require_once(about.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\orderyuk\themes\orderyuk\views\site\index.php:71)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/index.php?r=site/index
+in C:\xampp\htdocs\orderyuk\themes\orderyuk\views\site\index.php (71)
+in C:\xampp\htdocs\orderyuk\themes\orderyuk\views\site\index.php (71)
+in C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php (32)
+2014/07/11 17:57:22 [error] [php] include_once(about.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\orderyuk\themes\orderyuk\views\site\index.php:71)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): SiteController->render()
+#4 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/orderyuk/index.php?r=site/index
+in C:\xampp\htdocs\orderyuk\themes\orderyuk\views\site\index.php (71)
+in C:\xampp\htdocs\orderyuk\themes\orderyuk\views\site\index.php (71)
+in C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php (32)
+2014/07/11 22:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/orderyuk/
+---
+2014/07/11 22:53:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/orderyuk/
+---
+2014/07/12 05:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 05:08:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 05:28:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 05:28:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 06:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 07:18:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 07:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:04:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/index
+---
+2014/07/12 11:11:30 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:11:38 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:20:14 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:20:59 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:23:52 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:25:11 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:25:18 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:25:54 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:26:02 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(18): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:26:35 [error] [exception.CDbException] exception 'CDbException' with message 'Table "user" does not have a column named "username".' in C:\xampp\htdocs\Yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(8): CActiveRecord->findByAttributes(Array)
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:27:07 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(12): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:28:35 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(12): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:29:30 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(12): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:29:37 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(12): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:29:56 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(12): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:30:03 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(12): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:30:46 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "result".' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('result', Array)
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(12): CActiveRecord->__call('result', Array)
+#2 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(12): User->result('admin')
+#3 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#5 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#7 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#8 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:30:54 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(15): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:31:13 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(16): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:31:32 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(16): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:31:48 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.Username" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(8): CComponent->__get('Username')
+#1 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#6 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 11:31:58 [error] [exception.CException] exception 'CException' with message 'Property "User.level_id" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('level_id')
+#1 C:\xampp\htdocs\orderyuk\protected\components\WebUser.php(20): CActiveRecord->__get('level_id')
+#2 C:\xampp\htdocs\orderyuk\themes\orderyuk\views\layouts\tpl_navigation.php(3): WebUser->isAdmin()
+#3 C:\xampp\htdocs\orderyuk\themes\orderyuk\views\layouts\main.php(5): require_once('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<section class=...')
+#8 C:\xampp\htdocs\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<section class=...')
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\orderyuk\themes\orderyuk\views\layouts\column1.php(10): CBaseController->endContent()
+#12 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\Yii\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/Orderyuk/index.php
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 15:17:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('profile')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php
+---
+2014/07/12 15:18:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php
+---
+2014/07/12 15:18:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=user/profile
+---
+2014/07/12 15:18:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=user/profile
+---
+2014/07/12 15:18:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=user/profile
+---
+2014/07/12 15:19:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php
+---
+2014/07/12 15:19:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php
+---
+2014/07/12 15:20:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php
+---
+2014/07/12 15:20:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php
+---
+2014/07/12 15:20:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 15:20:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 15:23:06 [error] [php] Undefined variable: model (C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php:161)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#7 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): UserController->run()
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+in C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php (161)
+in C:\xampp\htdocs\orderyuk\index.php (13)
+2014/07/12 15:24:17 [error] [php] Undefined variable: data (C:\xampp\htdocs\orderyuk\protected\views\user\profile.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(869): UserController->renderFile()
+#1 C:\xampp\htdocs\Yii\framework\web\CController.php(782): UserController->renderPartial()
+#2 C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php(167): UserController->render()
+#3 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionProfile()
+#4 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#6 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#9 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): UserController->run()
+#13 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\orderyuk\index.php(13): CWebApplication->run()
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+in C:\xampp\htdocs\orderyuk\protected\views\user\profile.php (8)
+in C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php (167)
+in C:\xampp\htdocs\orderyuk\index.php (13)
+2014/07/12 15:25:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\Yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#9 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#10 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/Orderyuk/index.php
+---
+2014/07/12 16:42:37 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\models\User.php(19): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\Yii\framework\base\CModel.php(160): User->afterValidate()
+#3 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#4 C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php(73): CActiveRecord->save()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/create
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=user/create
+---
+2014/07/12 16:42:37 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\models\User.php(19): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\Yii\framework\base\CModel.php(160): User->afterValidate()
+#3 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#4 C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php(73): CActiveRecord->save()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/create
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=user/create
+---
+2014/07/12 16:45:28 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\models\User.php(19): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\Yii\framework\base\CModel.php(160): User->afterValidate()
+#3 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#4 C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php(73): CActiveRecord->save()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/create
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=user/create
+---
+2014/07/12 16:46:00 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(161): CComponent->__set('password', 'c')
+#1 C:\xampp\htdocs\orderyuk\protected\models\User.php(19): CActiveRecord->__set('password', 'c')
+#2 C:\xampp\htdocs\Yii\framework\base\CModel.php(160): User->afterValidate()
+#3 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#4 C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php(73): CActiveRecord->save()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/create
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=user/create
+---
+2014/07/12 16:46:16 [error] [exception.CException] exception 'CException' with message 'Property "User.password" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\xampp\htdocs\orderyuk\protected\models\User.php(19): CActiveRecord->__get('password')
+#2 C:\xampp\htdocs\Yii\framework\base\CModel.php(160): User->afterValidate()
+#3 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#4 C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php(73): CActiveRecord->save()
+#5 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#6 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#15 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#16 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/create
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=user/create
+---
+2014/07/12 17:14:40 [error] [exception.CException] exception 'CException' with message 'Property "User.ID" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ID')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(15): CActiveRecord->__get('ID')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/12 17:15:09 [error] [exception.CException] exception 'CException' with message 'Property "User.Username" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Username')
+#1 C:\xampp\htdocs\orderyuk\protected\components\UserIdentity.php(16): CActiveRecord->__get('Username')
+#2 C:\xampp\htdocs\orderyuk\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\Yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\Yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\Yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\orderyuk\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderyuk/index.php?r=site/login
+HTTP_REFERER=http://localhost/orderyuk/index.php?r=site/login
+---
+2014/07/12 17:17:08 [warning] [application] Failed to set unsafe attribute "JoinDate" of "User".
+in C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php (72)
+in C:\xampp\htdocs\orderyuk\index.php (13)
+2014/07/12 19:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 19:07:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 19:07:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/login
+---
+2014/07/12 19:11:37 [error] [exception.CException] exception 'CException' with message 'Property "User.email" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('email')
+#1 C:\xampp\htdocs\Yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('email')
+#2 C:\xampp\htdocs\Yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'email')
+#3 C:\xampp\htdocs\Yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'email', Array)
+#4 C:\xampp\htdocs\Yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(User), 'email', Array)
+#5 C:\xampp\htdocs\orderyuk\protected\views\user\_regform.php(29): CActiveForm->textField(Object(User), 'email', Array)
+#6 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\orderyuk\protected\views\user\register.php(12): CController->renderPartial('_regform', Array)
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\Yii\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#14 C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php(97): CController->render('register', Array)
+#15 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#16 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#25 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#26 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/index
+---
+2014/07/12 19:11:57 [error] [exception.CException] exception 'CException' with message 'Property "User.level_id" is not defined.' in C:\xampp\htdocs\Yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('level_id')
+#1 C:\xampp\htdocs\Yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('level_id')
+#2 C:\xampp\htdocs\Yii\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(User), 'level_id')
+#3 C:\xampp\htdocs\Yii\framework\web\widgets\CActiveForm.php(847): CHtml::activeDropDownList(Object(User), 'level_id', Array, Array)
+#4 C:\xampp\htdocs\orderyuk\protected\views\user\_regform.php(43): CActiveForm->dropDownList(Object(User), 'level_id', Array, Array)
+#5 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\orderyuk\protected\views\user\register.php(12): CController->renderPartial('_regform', Array)
+#9 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\Yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\Yii\framework\web\CController.php(782): CController->renderPartial('register', Array, true)
+#13 C:\xampp\htdocs\orderyuk\protected\controllers\UserController.php(97): CController->render('register', Array)
+#14 C:\xampp\htdocs\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegister()
+#15 C:\xampp\htdocs\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\Yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('register')
+#24 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/register')
+#25 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/Orderyuk/index.php?r=user/register
+HTTP_REFERER=http://localhost/Orderyuk/index.php?r=site/index
+---
+2014/07/13 04:45:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in C:\xampp\htdocs\Yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Yii\framework\web\CController.php(270): CController->missingAction('profile')
+#1 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(282): CController->run('profile')
+#2 C:\xampp\htdocs\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#3 C:\xampp\htdocs\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\orderyuk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderyuk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/orderyuk/index.php
+---
